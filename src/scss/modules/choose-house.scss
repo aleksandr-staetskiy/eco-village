@@ -1,0 +1,47 @@
+.choose-house {
+  background: #454e58;
+  padding: 15px 0px;
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  &__card {
+    width: calc(33.333% -30px);
+    text-align: center;
+    border: 1px solid #fff;
+    padding: 15px;
+    @media (max-width: $tableWidth) {
+      & {
+        width: calc(33.333% -30px);
+      }
+    }
+    @media (max-width: 430px) {
+      & {
+        width: calc(100% - 15px);
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  &__price {
+    display: block;
+    font-size: 23px;
+  }
+
+  &__name {
+    font-size: 27px;
+  }
+
+  &__button {
+    margin-top: 10px;
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+
+  &__subinfo {
+    text-align: center;
+  }
+}

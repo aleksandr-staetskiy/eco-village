@@ -1,14 +1,29 @@
-@import "utils/libs";
 @import "utils/vars";
+@import "utils/libs";
 @import "utils/mixins";
 @import "utils/fonts";
+@import "utils/grid";
+@import "modules/navbar";
+@import "modules/button";
+@import "modules/header";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "modules/promo";
+@import "modules/advantage";
+@import "modules/about";
+@import "modules/offer";
+@import "modules/comfort";
+@import "modules/family";
+@import "modules/promotion";
+@import "modules/choose-house";
+@import "modules/location";
+
 
 html {
   line-height: $mainLineHeight;
 	font-size: $mainFontSize;
 	color: $mainFontColor;
   height: 100%;
-  @media screen and (max-width: $desktopWidth) {
+  /* @media screen and (max-width: $desktopWidth) {
 		font-size: 16px;
   }
   @media screen and (max-width: $tableWidth) {
@@ -16,7 +31,7 @@ html {
   }
   @media screen and (max-width: $phoneWidth) {
 		font-size: 14px;
-  }
+  } */
 }
 
 body {
@@ -43,7 +58,7 @@ ul, li {
 
 section, .section {
   position: relative;
-  padding: 40px 0;
+  /* padding: 40px 0;
   @media screen and (max-width: $desktopWidth) {
     padding: 36px 0;
   }
@@ -52,7 +67,7 @@ section, .section {
   }
   @media screen and (max-width: $desktopWidth) {
     padding: 20px 0;
-  }
+  } */
 }
 
 .wrapper {
@@ -68,22 +83,13 @@ section, .section {
   min-height: 100vh;
 }
 
-.container {
-  width: 100%;
-  flex: 0 0 auto;
-  position: relative;
-  margin: 0 auto;
-  max-width: $desktopWidth;
-  @media screen and (max-width: $smDesktopWidth) {
-    max-width: tableWidth;
-  }
-  @media screen and (max-width: $tableWidth) {
-    max-width: phoneWidth;
-  }
-  @media screen and (max-width: $phoneWidth) {
-    max-width: smPhoneWidth;
-  }
+.logo {
+  white-space: nowrap;
+  font-size: 23px;
+  font-weight: 500;
+  color: #fff;
 }
+
 
 // Modules
 @import "modules/wrapper.scss";

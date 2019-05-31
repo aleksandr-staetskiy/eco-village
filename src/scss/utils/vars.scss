@@ -2,8 +2,8 @@
 $mainFont                : 'Montserrat', Helvetica, Arial, sans-serif;
 
 // Size
-$mainFontColor           : #101010;
-$mainFontSize            : 18px;
+$mainFontColor           : #fff;
+$mainFontSize            : 14px;
 $mainFontWeight          : 400;
 $mainLineHeight          : 1.4;
 
@@ -16,7 +16,7 @@ $smPhoneWidth            : 320px;
 // Main color
 $default-color           : #ffffff;
 $primary-color           : #444ce0;
-$success-color           : #26de81;
+$btn-color               : #f4f5f9;
 $danger-color            : #fc5c65;
 $warning-color           : #fed330;
 $light-color             : #999999;
@@ -33,3 +33,6 @@ $border-base             : #DCDFE6;
 $border-light            : #E4E7ED;
 $border-lighter          : #EBEEF5;
 $border-lightex          : #F2F6FC;
+
+
+$screen-sm                : 420px;
