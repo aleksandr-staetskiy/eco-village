@@ -1,0 +1,46 @@
+.advantage {
+  background: #454e58;
+  padding: 15px 0px;
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    @include negativ-margins;
+  }
+
+  &__item {
+    width: calc(16.666% -30px);
+    text-align: center;
+    @media (max-width: $tableWidth) {
+      & {
+        width: calc(33.333% -30px);
+      }
+    }
+    @media (max-width: $phoneWidth ) {
+      & {
+        width: calc(50%);
+      }
+    }
+  }
+
+  &__description {
+    @media (max-width: $phoneWidth ) {
+      & {
+        font-size: 12px;
+      }
+    }
+  }
+
+  &__icon {
+    width: 90px;
+    height: 90px;
+    @media (max-width: $phoneWidth ) {
+      & {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+}

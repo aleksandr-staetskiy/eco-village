@@ -1,0 +1,45 @@
+.offer {
+  padding: 20px 0px;
+  background: rgba(71, 69, 68, 0.9);
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: calc(33.333% - 30px);
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #fff;
+
+    @media (max-width: $screen-sm) {
+      & {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
+
+  }
+
+  &__title {
+    display: block;
+    font-size: 35px;
+
+    @media (max-width: $smDesktopWidth ) {
+      & {
+        font-size: 25px;
+      }
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    @media (max-width: $smDesktopWidth) {
+      & {
+        font-size: 14px;
+      }
+  }
+}
+}

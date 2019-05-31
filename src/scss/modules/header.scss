@@ -1,0 +1,27 @@
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 15px 0;
+  background: rgba(72, 83, 94, 0.694);
+  z-index: 100;
+
+  @media (max-width: 420px) {
+    & {
+      position: relative;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__phone {
+    white-space: nowrap;
+    color: #fff;
+  }
+}

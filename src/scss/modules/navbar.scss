@@ -1,0 +1,24 @@
+.navbar {
+  color: #fff;
+
+  @media (max-width: 735px) {
+    & {
+      display: none;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+  }
+  
+  &__item {
+    font-size: 12px;
+    margin-left: 15px;
+  }
+
+  &__link {
+    color: #fff;
+    white-space: nowrap;
+  }
+}
